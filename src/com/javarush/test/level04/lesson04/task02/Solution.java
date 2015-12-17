@@ -12,11 +12,21 @@ public class Solution
     {
         closeToTen(8,11);
         closeToTen(14,7);
+        //System.out.println("abs - " + abs(3));
     }
 
     public static void closeToTen(int a, int b)
     {
         //::CODE:
+        if ((abs(10-a)-10)< (abs(10-b)-10))
+        {
+            System.out.println(a);
+        }
+        else
+        {
+            System.out.println(b);
+        }
+
 
     }
 

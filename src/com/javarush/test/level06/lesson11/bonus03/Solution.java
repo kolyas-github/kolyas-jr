@@ -1,5 +1,7 @@
 package com.javarush.test.level06.lesson11.bonus03;
 
+import com.javarush.test.level04.lesson02.task03.Sol;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -27,36 +29,35 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
-        //напишите тут ваш код
-        //int a1 = Integer.parseInt(reader.readLine());
-        /*int a2 = Integer.parseInt(reader.readLine());
-        int a3= Integer.parseInt(reader.readLine());
-        int a4= Integer.parseInt(reader.readLine());
-        Solution.cats.add(a1);
-        Solution.cats.add(0,a2);
-        Solution.cats.add(0,a3);
-        Solution.cats.add(1,a4);
-
-        for (int j = 0; j<Solution.cats.size();j++){
-            System.out.println(Solution.cats.get(j));
-        }*/
         for (int i = 0; i<4; i++)
         {
             int a = Integer.parseInt(reader.readLine());
-            System.out.println("i = "+i);
+            //System.out.println("i = "+i);
             if (i==0) {
                 Solution.cats.add(a);
             }
+            else if (i==1) {
+                if (a<=Solution.cats.get(i-1)){
+                    Solution.cats.add(0,a);
+                }
+                else {
+                    Solution.cats.add(a);
+                }
+            }
             else
             {
-                while (a < Solution.cats.get(i))
-                {
-                    
-                }
-                System.out.println("l="+l);
-                Solution.cats.add(l, a);
-            }
+                for (int j = 0; j<=i ;j++)
+//                    System.out.println("---");
+                    if (a <= Solution.cats.get(j)){
+                        Solution.cats.add(j,a);
+                        break;
+                    }
+                    else
+                    {
+                        continue;
+                    }
 
+                }
         }
         for (int j = 0; j<Solution.cats.size();j++){
             System.out.println(Solution.cats.get(j));

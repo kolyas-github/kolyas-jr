@@ -1,7 +1,5 @@
 package com.javarush.test.level06.lesson11.bonus03;
 
-import com.javarush.test.level04.lesson02.task03.Sol;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -29,37 +27,13 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i<4; i++)
+        for (int i = 0; i<5; i++)
         {
             int a = Integer.parseInt(reader.readLine());
-            //System.out.println("i = "+i);
-            if (i==0) {
-                Solution.cats.add(a);
-            }
-            else if (i==1) {
-                if (a<=Solution.cats.get(i-1)){
-                    Solution.cats.add(0,a);
-                }
-                else {
-                    Solution.cats.add(a);
-                }
-            }
-            else
-            {
-                for (int j = 0; j<=i ;j++)
-//                    System.out.println("---");
-                    if (a <= Solution.cats.get(j)){
-                        Solution.cats.add(j,a);
-                        break;
-                    }
-                    else
-                    {
-                        continue;
-                    }
-
-                }
+            Solution.cats.add(a);
         }
         for (int j = 0; j<Solution.cats.size();j++){
+            for ()
             System.out.println(Solution.cats.get(j));
         }
     }

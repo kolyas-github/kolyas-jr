@@ -15,6 +15,16 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        int[] masInt = new int[10];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = masInt.length - 1; i >= 0; i--)
+        {
+            masInt[i] = Integer.parseInt(reader.readLine());
 
+        }
+        for (int i = 0; i < masInt.length; i++)
+        {
+            System.out.println(masInt[i]);
+        }
     }
 }

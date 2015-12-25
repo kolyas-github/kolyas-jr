@@ -15,6 +15,22 @@ public class Solution
     public static void main(String[] args) throws Exception
     {
         //напишите тут ваш код
+        ArrayList<String> masStr = new ArrayList<String>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = 0; i < 5; i++)
+        {
+            masStr.add(i,reader.readLine());
+        }
+        for (int i = 0; i < 13; i++)
+        {
+            String tempStr = masStr.get(masStr.size()-1);
+            masStr.remove(masStr.size() - 1);
+            masStr.add(0,tempStr);
+        }
+        for (int i = 0; i < masStr.size(); i++)
+        {
+            System.out.println(masStr.get(i));
+        }
 
     }
 }

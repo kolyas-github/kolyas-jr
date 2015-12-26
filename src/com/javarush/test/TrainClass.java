@@ -21,10 +21,15 @@ public class TrainClass
 
         result.addAll(list1);
         result.addAll(list2);
-
+        System.out.println("размер массива до удаления элемента");
+        System.out.println(result.size());
+        System.out.println();
+        result.remove(0);
+        System.out.println("размер массива после удаления элемента");
+        System.out.println(result.size());
         for (Integer x : result)
         {
-            System.out.println(x);
+            System.out.print(x);
         }
     }
 }

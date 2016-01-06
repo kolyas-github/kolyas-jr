@@ -6,23 +6,20 @@ package com.javarush.test.level06.lesson11.home05;
 3. В классе Solution создайте статический метод public void printIdea(Idea idea), который будет выводить
 на экран описание идеи - это то, что возвращает метод getDescription
 */
-
 public class Solution
 {
     public static void main(String[] args)
     {
-        Solution.printIdea(new Idea());
+        printIdea(new Idea());
     }
-
     //Добавьте тут класс Idea
     public static class Idea
     {
         public String getDescription(){
-            return "qwe";
+           return "Good ideaaa";
         }
     }
-
     public static void printIdea(Idea idea){
-        idea.getDescription();
+        System.out.println(idea.getDescription());
     }
 }

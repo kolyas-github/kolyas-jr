@@ -11,25 +11,19 @@ public class TrainClass
 {
     public static void main(String[] args) throws IOException
     {
-        ArrayList<Integer> list1 = new ArrayList<Integer>();
-        Collections.addAll(list1, 1, 5, 6, 11, 3, 15, 7, 8);
 
-        ArrayList<Integer> list2 = new ArrayList<Integer>();
-        Collections.addAll(list2, 1, 8, 6, 21, 53, 5, 67, 18);
-
-        ArrayList<Integer> result = new ArrayList<Integer>();
-
-        result.addAll(list1);
-        result.addAll(list2);
-        System.out.println("размер массива до удаления элемента");
-        System.out.println(result.size());
-        System.out.println();
-        result.remove(0);
-        System.out.println("размер массива после удаления элемента");
-        System.out.println(result.size());
-        for (Integer x : result)
-        {
-            System.out.print(x);
-        }
     }
+/*
+    public static void main(String[] args) throws IOException
+    {
+        long n = 13;
+        long f = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            f*=i;
+        }
+        System.out.println(f);
+    }
+*/
+
 }

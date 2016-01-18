@@ -1,12 +1,6 @@
 package com.javarush.test;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Alex on 25.12.2015.
@@ -15,6 +9,8 @@ public class TrainClass
 {
     public static void main(String[] args) throws IOException
     {
+        System.out.println("ALL OK");
+
         /*public static void main(String[] args) throws IOException
         {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
